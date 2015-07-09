@@ -82,22 +82,6 @@ namespace CallCentre.Infrastructure.Services
             };
         }
 
-        public bool DequeueCall(Queue queue, string callSid, string url)
-        {
-            var twilioClient = new TwilioRestClient(_accountSettings.AccountSid, _accountSettings.AuthToken);
-            var result = twilioClient.DequeueQueueMember(queue.Id, callSid, url);
-
-            return result == DequeueStatus.Success;
-        }
-
-        public bool DequeueFirstCall(Queue queue, string url)
-        {
-            var twilioClient = new TwilioRestClient(_accountSettings.AccountSid, _accountSettings.AuthToken);
-            var result = twilioClient.DequeueFirstQueueMember(queue.Id, url);
-
-            return result == DequeueStatus.Success;
-        }
-
         public List<Queue> GetQueues()
         {
             var twilioClient = new TwilioRestClient(_accountSettings.AccountSid, _accountSettings.AuthToken);
