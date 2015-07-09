@@ -39,9 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IStatusCallbackUrl.cs" />
     <Compile Include="Interfaces\IQueueProvider.cs" />
     <Compile Include="Interfaces\IAccountSettings.cs" />
     <Compile Include="Objects\Call.cs" />
+    <Compile Include="Objects\Endpoint.cs" />
+    <Compile Include="Objects\EndpointType.cs" />
     <Compile Include="Objects\Queue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
