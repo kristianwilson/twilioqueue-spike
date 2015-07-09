@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCentre.Core", "CallCentre.Core\CallCentre.Core.csproj", "{5A7EDEDB-B736-4A74-97FB-71D8BCAFBB31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{303939CF-6D74-4D3B-9CBC-491E461D7407}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{74456391-DF90-498A-92CE-A56621A6E97E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCentre.Infrastructure.Services", "CallCentre.Infrastructure.Services\CallCentre.Infrastructure.Services.csproj", "{017D9694-48C0-4C1D-8070-79A6B562DFAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCentre.Infrastructure", "CallCentre.Infrastructure\CallCentre.Infrastructure.csproj", "{20AD9712-BBCB-451E-A58E-77D96062DCD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCentre.WebAPI", "CallCentre.WebAPI\CallCentre.WebAPI.csproj", "{DD3384FB-84AD-4178-9DBD-A2BE785FA336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCentre.WebAPI.Tests", "CallCentre.WebAPI.Tests\CallCentre.WebAPI.Tests.csproj", "{EFE14ABD-FFDE-405D-AB34-B43A0F1CB30D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A7EDEDB-B736-4A74-97FB-71D8BCAFBB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7EDEDB-B736-4A74-97FB-71D8BCAFBB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7EDEDB-B736-4A74-97FB-71D8BCAFBB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7EDEDB-B736-4A74-97FB-71D8BCAFBB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017D9694-48C0-4C1D-8070-79A6B562DFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017D9694-48C0-4C1D-8070-79A6B562DFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017D9694-48C0-4C1D-8070-79A6B562DFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017D9694-48C0-4C1D-8070-79A6B562DFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20AD9712-BBCB-451E-A58E-77D96062DCD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AD9712-BBCB-451E-A58E-77D96062DCD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AD9712-BBCB-451E-A58E-77D96062DCD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AD9712-BBCB-451E-A58E-77D96062DCD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3384FB-84AD-4178-9DBD-A2BE785FA336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3384FB-84AD-4178-9DBD-A2BE785FA336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3384FB-84AD-4178-9DBD-A2BE785FA336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3384FB-84AD-4178-9DBD-A2BE785FA336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE14ABD-FFDE-405D-AB34-B43A0F1CB30D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE14ABD-FFDE-405D-AB34-B43A0F1CB30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE14ABD-FFDE-405D-AB34-B43A0F1CB30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE14ABD-FFDE-405D-AB34-B43A0F1CB30D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A7EDEDB-B736-4A74-97FB-71D8BCAFBB31} = {303939CF-6D74-4D3B-9CBC-491E461D7407}
+		{017D9694-48C0-4C1D-8070-79A6B562DFAD} = {74456391-DF90-498A-92CE-A56621A6E97E}
+		{20AD9712-BBCB-451E-A58E-77D96062DCD4} = {74456391-DF90-498A-92CE-A56621A6E97E}
+	EndGlobalSection
+EndGlobal
