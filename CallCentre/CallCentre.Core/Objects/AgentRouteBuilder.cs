@@ -1,4 +1,5 @@
-﻿using CallCentre.Core.Interfaces;
+﻿using System;
+using CallCentre.Core.Interfaces;
 
 namespace CallCentre.Core.Objects
 {
@@ -7,7 +8,7 @@ namespace CallCentre.Core.Objects
         private readonly Agent _agent;
         private readonly string _url;
 
-        public string Url { get { return string.Format(_url, _agent.Identifier); } }
+        public string Url { get { return string.Format(string.Concat(_url, "/{0}"), _agent.Identifier); } }
         public string Method { get { return "Post"; } }
 
         public AgentRouteBuilder(Agent agent, string url)
