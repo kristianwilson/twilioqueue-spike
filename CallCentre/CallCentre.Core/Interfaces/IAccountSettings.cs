@@ -2,7 +2,7 @@
 {
     public interface IAccountSettings
     {
-        string AccountSid { get; set; }
-        string AuthToken { get; set; }
+        string AccountSid { get; }
+        string AuthToken { get; }
     }
 }

@@ -68,6 +68,14 @@ namespace CallCentre.Infrastructure.Services
             };
         }
 
+        public bool DequeueCallFromQueue(Queue queue, string callSid, IRouteBuilder route)
+        {
+            var twilioClient = new TwilioRestClient(_accountSettings.AccountSid, _accountSettings.AuthToken);
+            var result = twilioClient.DequeueQueueMember(queue.Id, callSid, route.Url, route.Method);
+
+            return result == DequeueStatus.Success;
+        }
+
         public Call GetFirstCallFromQueue(Queue queue)
         {
             var twilioClient = new TwilioRestClient(_accountSettings.AccountSid, _accountSettings.AuthToken);
@@ -80,6 +88,14 @@ namespace CallCentre.Infrastructure.Services
                 DateEnqueued = result.DateEnqueued,
                 Position = result.Position
             };
+        }
+
+        public bool DequeueFirstCallFromQueue(Queue queue, IRouteBuilder route)
+        {
+            var twilioClient = new TwilioRestClient(_accountSettings.AccountSid, _accountSettings.AuthToken);
+            var result = twilioClient.DequeueFirstQueueMember(queue.Id, route.Url, route.Method);
+
+            return result == DequeueStatus.Success;
         }
 
         public List<Queue> GetQueues()

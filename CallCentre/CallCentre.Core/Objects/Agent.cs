@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CallCentre.Core.Interfaces
+namespace CallCentre.Core.Objects
 {
-    public interface IStatusCallback
+    public class Agent
     {
-        string Url { get; }
+        public string Identifier { get; set; }
     }
 }
