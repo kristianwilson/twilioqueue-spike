@@ -41,7 +41,6 @@
   <ItemGroup>
     <Compile Include="Interfaces\IQueueSettings.cs" />
     <Compile Include="Interfaces\IRouteBuilder.cs" />
-    <Compile Include="Interfaces\IStatusCallbackUrl.cs" />
     <Compile Include="Interfaces\IQueueProvider.cs" />
     <Compile Include="Interfaces\IAccountSettings.cs" />
     <Compile Include="Objects\Agent.cs" />

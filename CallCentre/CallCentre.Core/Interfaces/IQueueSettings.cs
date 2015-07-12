@@ -2,6 +2,6 @@
 {
     public interface IQueueSettings
     {
-        string Url { get; }
+        string AgentUrl { get; }
     }
 }

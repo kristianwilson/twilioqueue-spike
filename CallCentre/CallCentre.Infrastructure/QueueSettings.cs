@@ -9,6 +9,6 @@ namespace CallCentre.Infrastructure
 {
     public class QueueSettings : IQueueSettings
     {
-        public string Url { get; private set; }
+        public string AgentUrl { get; private set; }
     }
 }
