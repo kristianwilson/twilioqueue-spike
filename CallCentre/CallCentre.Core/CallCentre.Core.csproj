@@ -44,7 +44,7 @@
     <Compile Include="Interfaces\IQueueProvider.cs" />
     <Compile Include="Interfaces\IAccountSettings.cs" />
     <Compile Include="Objects\Agent.cs" />
-    <Compile Include="Objects\AgentRouteBuilder.cs" />
+    <Compile Include="Objects\AgentQueueRouteBuilder.cs" />
     <Compile Include="Objects\Call.cs" />
     <Compile Include="Objects\Endpoint.cs" />
     <Compile Include="Objects\EndpointType.cs" />
